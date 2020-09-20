@@ -1,8 +1,10 @@
 <html>
   <head>
-    <title>MyApp/Redis</title>
+    <title>MyApp/MySQL</title>
   </head>
+  <body style="background: {{ color }};"></body>
     <h1>Hello {{ hostname }}!</h1>
-    <h3>Number of visitors so far: {{ vcount }}</h3>
+    <h3>Connection status: {{ status }}</h3>
+    <p>DBHOST: {{dbhost}} , DATABASE: {{ database }}, DBUSER: {{ dbuser }}, DBPASS: {{dbpass}}</p>
   </body>
 </html>

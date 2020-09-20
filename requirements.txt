@@ -1,2 +1,2 @@
 Flask
-Redis
+mysql-connector-python
