@@ -19,11 +19,11 @@ def argtest (cli, env, default):
 def hello():
   try:
     mysql.connector.connect(host=DBHOST, database=DATABASE, user=DBUSER, password=DBPASS)
-    status = SUCCESS
+    status = 'SUCCESS'
     color = '#9eff9a'
   except Exception as e:
     msg = str(e)
-    status = FAILURE
+    status = 'FAILURE'
     color = '#ff9a9e'
 
   return render_template('index.html', hostname=socket.gethostname(), dbhost=DBHOST, database=DATABASE, dbuser=DBUSER, dbpass=DBPASS, status=status, color=color)
